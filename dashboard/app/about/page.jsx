@@ -27,7 +27,7 @@ function About(){
             Creamos soluciones que brindan experiencias de usuario excepcionales y cumplen con tus objetivos.</p>
           </div>
           <div className='flex-1 text-center bg-[#ef0e9d]'>
-            <h3 className={`${titulo.className} text-white text-2xl m-4`}>Desarrollo Web Personalizado</h3>
+            <h3 className={`${titulo.className} text-white text-2xl m-4`}>Desarrollo Web Personalizado para ti</h3>
             <img className='object-cover w-full h-[300px]' src="https://images.pexels.com/photos/109371/pexels-photo-109371.jpeg" alt="app-movil" />
             <p className={`${texto.className} text-white text-xl m-4`}>Desde sitios web informativos hasta plataformas de comercio electrónico, creamos sitios web 
             personalizados que se adaptan a las necesidades únicas de tu negocio. Nuestro enfoque en el diseño intuitivo y el rendimiento garantiza que tus visitantes
