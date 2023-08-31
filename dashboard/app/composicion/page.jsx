@@ -70,6 +70,10 @@ function Composicion(){
   }
 
   const redondear = (num) => Math.round(num*100)/100
+  const tabla = `${titulo.className} border-spacing-0 text-white w-full`;
+  const encabezado = `${texto.className} pl-10 pt-10 pb-4 text-4xl w-1/3`;
+  const celda = `${texto.className} pl-10 pt-10 pb-4 text-xl w-1/3`;
+  const columna = 'odd:bg-boxback';
 
   return(
   <div className="bg-back w-full p-20">
@@ -150,36 +154,34 @@ function Composicion(){
     </form>
     {
     !error && composicion.grasa && (
-      <div className='p-5 bg-boxback border-2 border-line rounded-xl my-5'>
-        <div>
-          <table className={`${titulo.className} text-white w-full`}>
-            <tr className='text-left'>
-              <th className='text-xl'>Componente</th>
-              <th className='text-xl'>%</th>
-              <th className='text-xl'>kg</th>
+      <div className='m-5 border-2 border-line rounded-2xl shadow-2xl overflow-hidden'>
+          <table className={tabla}>
+            <tr className='text-left bg-primary'>
+              <th className={encabezado}>Componente</th>
+              <th className={encabezado}>%</th>
+              <th className={encabezado}>kg</th>
             </tr>
-            <tr>
-              <td>Masa Grasa</td>
-              <td>{redondear(composicion.grasa)}</td>
-              <td>{redondear(composicion.grasakilo)}</td>
+            <tr className={columna}>
+              <td className={celda}>Masa Grasa</td>
+              <td className={celda}>{redondear(composicion.grasa)}</td>
+              <td className={celda}>{redondear(composicion.grasakilo)}</td>
             </tr>
-            <tr>
-              <td>Masa Osea</td>
-              <td>{redondear(composicion.posea)}</td>
-              <td>{redondear(composicion.osea)}</td>
+            <tr className={columna}>
+              <td className={celda}>Masa Osea</td>
+              <td className={celda}>{redondear(composicion.posea)}</td>
+              <td className={celda}>{redondear(composicion.osea)}</td>
             </tr>
-            <tr>
-              <td>Masa Residual</td>
-              <td>{redondear(composicion.presidual)}</td>
-              <td>{redondear(composicion.residual)}</td>
+            <tr className={columna}>
+              <td className={celda}>Masa Residual</td>
+              <td className={celda}>{redondear(composicion.presidual)}</td>
+              <td className={celda}>{redondear(composicion.residual)}</td>
             </tr>
-            <tr>
-              <td>Masa Muscular</td>
-              <td>{redondear(composicion.pmuscular)}</td>
-              <td>{redondear(composicion.muscular)}</td>
+            <tr className={columna}>
+              <td className={celda}>Masa Muscular</td>
+              <td className={celda}>{redondear(composicion.pmuscular)}</td>
+              <td className={celda}>{redondear(composicion.muscular)}</td>
             </tr>
           </table>
-        </div>
       </div>
     )}
   </div>);
