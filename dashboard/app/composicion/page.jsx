@@ -156,7 +156,7 @@ function Composicion(){
     !error && composicion.grasa && (
       <div className='m-5 border-2 border-line rounded-2xl shadow-2xl overflow-hidden'>
           <table className={tabla}>
-            <tr className='text-left bg-primary'>
+            <tr className='text-left bg-secondary'>
               <th className={encabezado}>Componente</th>
               <th className={encabezado}>%</th>
               <th className={encabezado}>kg</th>
