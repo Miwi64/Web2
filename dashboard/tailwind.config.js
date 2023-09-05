@@ -21,6 +21,7 @@ module.exports = {
       line: '#857f84',
       boxback: '#50414c',
       transparent: 'transparent',
+      footerback: '#130810',
       black: '#000',
       white: '#ffffff',
       yellow: '#f1c217'
